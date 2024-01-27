@@ -1,14 +1,12 @@
 
 
-# Assignment 4 (A4) in CSCI 1170 (Fall 2022)
-
+#Flight Tracking System
 Date Created: 01 12 2022
 Last Modification Date: 01 12 2022
 
 ## Author(s)
 
 - Full Name: <Rabjot Kaur>
-- Email: rb588740@dal.ca
 
 ## Citations/Attributions
 
