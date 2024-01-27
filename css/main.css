@@ -1,0 +1,169 @@
+/* 
+ * Main scripts file for the flight schedule website.
+ * Assignment 4, CSCI 1170, Fall 2022
+ * Starter code provided by Dr. Mayra Barrera Machuca
+ */
+
+ /* General body styling, body set up as a grid container */
+body {
+	width: 80vw;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(5, auto);
+	
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page banner styling, set to apper on the top row */
+.pg-banner {
+	grid-row: 1/2;
+	grid-column: 1/-1;
+	border-bottom: 5px solid steelblue;
+}
+.header-container {
+	padding: 0 0.5em;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* Page footer styling, set to apper on the bottom row */
+.pg-footer {
+	padding: 0 0.5em;
+	grid-row: -3/-2;
+	grid-column: 1/-1;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	border-top: 1px solid gold;
+	font-size: smaller;
+}
+
+/* Navigation elements - primary (main nav in the banner), secondary (smaller nav in the banner) and footer nav. */
+.primary-nav {
+	display: flex;
+}
+.primary-nav > a {
+	margin: 0 0 0 1em;
+	color: steelblue;
+	text-decoration: none;
+}
+.primary-nav > a:hover,
+.primary-nav > a:active {
+	color: maroon;
+}
+
+.footer-nav {
+	display: flex;
+}
+.footer-nav > a {
+	margin: 0 0 0 1em;
+	color: steelblue;
+	text-decoration: none;
+}
+.footer-nav > a:hover,
+.footer-nav > a:active {
+	color: maroon;
+}
+
+
+/* Main content container to include all the flights */
+.container {
+	
+	margin: 10px;
+	min-height: 200px;
+
+	grid-column: 1/5;
+
+	/* Add your styles for the Main container here */
+	/*display: flex;*/
+	display: grid;
+	/* /grid-template-columns: repeat(auto-fit,minmax(160px,1fr)); */
+	grid-gap: 10px;
+    grid-template-columns: auto auto auto;
+	/* Add your styles for the Main container here */
+}
+
+
+/* Flight "bag" styling */
+
+
+/* Flight info boxes */
+.flight-info {
+}
+.flight-availability-info {
+}
+.flights-selection-bag {
+	
+	border: solid cornflowerblue;
+	background-color: cornflowerblue;
+	color: white;
+	align-self: auto;
+	width: 200px;
+	
+}
+
+
+
+ .blueCont{
+	
+	
+	border: solid black ;
+	
+	background-color:lightblue;
+	font-size: 15px;
+	text-align: center;
+	
+/*styling the button*/
+}
+button{
+	width: 130px;
+	height:20px ;
+}
+
+/*styling the font */
+p{
+	font-size: 12px;
+	background-color: cornflowerblue;
+	text-align: center;
+}
+h2{
+	width: 200px;
+	text-align: center;
+}
+h6{
+	text-align: center;
+	margin-top: 1em;
+	
+}
+
+
+/* responsive */
+@media screen and (max-width: 840px){
+
+	.container{
+		display: grid;
+		margin: 10px;
+		min-height: 200px;
+		grid-column: 1/6;
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: auto;
+	}
+
+	
+	.flights-selection-bag{
+		width: 100px;
+	}
+
+    .primary-nav > a{
+		display: none;
+	}
+
+
+}
+	
